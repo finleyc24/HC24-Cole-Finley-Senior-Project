@@ -6,3 +6,12 @@ React Native uses React and JavaScript for making mobile apps. I am already fami
 
 https://medium.com/javarevisited/top-5-frameworks-to-create-cross-platform-android-and-ios-apps-in-2020-d02edf3d01f1
 Cordova is another cross-platform framework that is owned by Adobe. It uses HTML5, CSS3, and Javascript. I am a little bit familiar with these languages so  the learning curve will be less than learning FLutter but stilll harder than React Native. 
+
+https://remix.run/docs/en/main/pages/technical-explanation
+This is Remixs documantation page that gives you explanations of what is best about this framework. There are many tutorials and explanations to help guide you to understand their framework. 
+
+https://nextjs.org/learn/foundations/from-javascript-to-react
+This is Next.jss documentation page. It has all the information that you would need to know what their framework does and how to use it.
+
+https://react.dev/learn/start-a-new-react-project
+This page teaches you how to begin development using react. I used this page to decide which framework i was going to be using and how it pairs with React. x
