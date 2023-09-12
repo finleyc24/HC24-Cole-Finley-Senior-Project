@@ -14,4 +14,7 @@ https://nextjs.org/learn/foundations/from-javascript-to-react
 This is Next.jss documentation page. It has all the information that you would need to know what their framework does and how to use it.
 
 https://react.dev/learn/start-a-new-react-project
-This page teaches you how to begin development using react. I used this page to decide which framework i was going to be using and how it pairs with React. x
+This page teaches you how to begin development using react. I used this page to decide which framework i was going to be using and how it pairs with React.
+
+https://vercel.com/docs
+These are all the documents needed to understand how to deploy to vercel form Next.js and github. 
