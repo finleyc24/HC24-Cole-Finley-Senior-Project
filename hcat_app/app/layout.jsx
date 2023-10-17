@@ -1,24 +1,23 @@
-import '@styles/globals.css'
-import { Children } from 'react'
+import '@styles/globals.css';
+import { Children } from 'react';
 
 export const metadata = {
-    title: "Hanover College EAP",
-    description: 'Navigate emergencies with EAPs'
+    title: "Hanover College",
+    description: 'Find Hanover Emergency Action Plans'
 }
 
-const RootLayout = ({Children}) => {
+const RootLayout = ({children}) => {
   return (
-    <html lang='en'>
+    <html lang="en">
         <body>
-            <div className="main"> 
+            <div className="main">
                 <div className="gradient" />
             </div>
 
             <main className="app">
-                {Children}
+                {children}
             </main>
         </body>
-
     </html>
   )
 }
