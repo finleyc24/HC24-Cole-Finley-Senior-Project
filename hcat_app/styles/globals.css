@@ -1,0 +1,25 @@
+
+Header {
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-weight: 200;
+    background-color: rgb(147, 0, 0);
+}
+
+
+.location {
+    font-size: larger;
+    text-decoration: none;
+    color: navy;
+}
+
+.location:hover {
+    font-size: 150%;
+    background-color: lightgrey;
+}
+
+.policies {
+    color: blue;
+    font-size: larger;
+    text-decoration: none;
+}

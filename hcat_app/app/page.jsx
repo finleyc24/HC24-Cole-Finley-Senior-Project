@@ -30,12 +30,20 @@ const Home = () => {
       <main>
         <aside className="leftaside">
           <div>
-            <ListGroup items={locations} heading="Locations" />
+            <ListGroup
+              className="locations"
+              items={locations}
+              heading="Locations"
+            />
           </div>
         </aside>
         <aside className="rightaside">
           <div>
-            <ListGroup items={policies} heading="Policies" />
+            <ListGroup
+              className="policies"
+              items={policies}
+              heading="Policies"
+            />
           </div>
         </aside>
       </main>

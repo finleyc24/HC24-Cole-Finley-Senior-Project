@@ -1,4 +1,4 @@
-import "/styles/globals.css";
+import "/styles/globals.scss";
 
 export const metadata = {
   title: "Hanover College",
