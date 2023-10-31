@@ -18,8 +18,8 @@ Header {
     background-color: lightgrey;
 }
 
-.policies {
-    color: blue;
+.policy {
     font-size: larger;
     text-decoration: none;
+    color: navy;
 }

@@ -16,7 +16,7 @@ const Home = () => {
   ];
 
   let policies = [
-    <Link classname="policy" href="weather">
+    <Link className="policy" href="weather">
       Weather Policies
     </Link>,
     "Test",
