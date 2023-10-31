@@ -1,14 +1,26 @@
-import React from "react";
-import Header from "/components/header";
-import {promises as fs} from fs;
+"use client";
+import useSWR from "swr";
 
-const alumniStadium = () => {
+// Write a fetcher function to wrap the native fetch function and return the result of a call to the URL in JSON format
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+export default function Index() {
+  // Set up SWR to run the fetcher function when calling "/api/staticdata"
+  // There are 3 possible states: (1) "loading" when data is null (2) "ready" when the data is returned (3) "error" when there was an error fetching the data
+  const { data, error } = useSWR("/api/staticdata", fetcher);
+
+  // Handle the error state
+  if (error) return <div>Failed to load</div>;
+  // Handle the loading state
+  if (!data) return <div>Loading...</div>;
+  // Handle the ready state and display the result contained in the data object mapped to the structure of the JSON file
   return (
     <div>
-      <Header />
-      <h1>Alumni Stadium</h1>
+      <h1>My Framework from file</h1>
+      <ul>
+        <li>Name: {data.record.name}</li>
+        <li>Language: {data.record.language}</li>
+      </ul>
     </div>
   );
-};
-
-export default alumniStadium;
+}
