@@ -15,11 +15,16 @@ Header {
 
 .location:hover {
     font-size: 150%;
-    background-color: lightgrey;
+    color: rgb(177, 0, 0);
 }
 
 .policy {
     font-size: larger;
     text-decoration: none;
     color: navy;
+}
+
+.policy:hover {
+    font-size: 150%;
+    color: rgb(177, 0, 0);
 }
