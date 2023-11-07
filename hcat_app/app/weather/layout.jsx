@@ -1,3 +1,4 @@
+// Creates the basic layout for the weather policies page
 import "/styles/globals.css";
 
 export const metadata = {
