@@ -1,26 +1,30 @@
+// Creates the page for the Alumni Stadium EAPs
+
 import data from "/components/data/data.json";
-const UserDetails = () => {
+
+const AlumniStadium = () => {
   return (
     <>
       <div>
-        <div>Name: {data.name}</div>
-        <div>Email: {data.email}</div>
-        <div>Website: {data.website}</div>
+        <div>Venue: {data.venue}</div>
+        <div>Sport: {data.sport}</div>
+        <div>Address: {data.address}</div>
         <div>
-          <label>Country:</label>
+          <label>EAP Type:</label>
           <select>
-            {data.country.map((country) => {
+            {data.actionPlan.map((actionPlan) => {
               return (
-                <option key={country.id} value={country.id}>
-                  {country.name}
+                <option key={actionPlan.id} value={actionPlan.id}>
+                  {actionPlan.name}
                 </option>
               );
             })}
           </select>
+          <script>getElementById</script>
         </div>
       </div>
     </>
   );
 };
 
-export default UserDetails;
+export default AlumniStadium;

@@ -1,3 +1,4 @@
+//Sets the basic layout for Alumni Stadium page
 import "/styles/globals.css";
 
 export const metadata = {

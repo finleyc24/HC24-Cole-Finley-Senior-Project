@@ -1,11 +1,11 @@
 {
-    "name" : "Learn Best Coding",
-    "website" : "www.learnbestcoding.com",
-    "email" : "something@learnbestcoding.com",
-    "country" :[
-        {"id": "1", "name" : "USA"},
-        {"id": "2", "name" : "Canada"},
-        {"id": "3", "name" : "Japan"},
-        {"id": "4", "name" : "Australia"}
+    "venue" : "Almuni Stadium",
+    "sport" : "Football, Track and Field, Lacrosse, and Soccer",
+    "address" : "359 East LaGrange Rd. through Physical Plant parking lot. Turn right out of parking lot and enter Stadium through North Gate entrance.",
+    "actionPlan" :[
+        {"id": "1", "name" : "Head Injury", "plan": "This is an emergency action plan for head injuries"},
+        {"id": "2", "name" : "Neck Injury", "plan": "This is an emergency action plan for neck injuries"}, 
+        {"id": "3", "name" : "Back Injury", "plan": "This is an emergency action plan for back injuries"},
+        {"id": "4", "name" : "Trouble Breathing", "plan": "This is an emergency action plan for trouble breathing"}
     ]
  }

@@ -1,3 +1,4 @@
+// Creates a list group that can be used on each page
 "use client";
 import { useState } from "react";
 

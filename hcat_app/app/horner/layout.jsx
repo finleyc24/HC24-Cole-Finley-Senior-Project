@@ -1,3 +1,4 @@
+// Sets basic layout for Horner page
 import "/styles/globals.css";
 
 export const metadata = {

@@ -1,3 +1,5 @@
+// Creates basic layout for the Home Page
+
 import "/styles/globals.css";
 
 export const metadata = {
