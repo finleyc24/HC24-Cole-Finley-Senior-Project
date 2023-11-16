@@ -7,10 +7,10 @@ import ListGroup from "/components/ListGroup";
 
 const Home = () => {
   let locations = [
-    <Link key="alumnistadium" className="location" href="alumnistadium">
+    <Link key="alumnistadium" className="location" href="locations/1">
       Alumni Stadium
     </Link>,
-    <Link key="horner" className="location" href="horner">
+    <Link key="horner" className="location" href="locations/2">
       Horner Center
     </Link>,
   ];
