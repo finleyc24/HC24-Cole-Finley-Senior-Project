@@ -1,3 +1,5 @@
+import { location, planTypes } from "/data/locationData.json";
+
 export default function PlanType({ params }) {
   return (
     <h1>
