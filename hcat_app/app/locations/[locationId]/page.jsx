@@ -10,8 +10,6 @@ export default function Locations({ params }) {
     return <h1>404 - Page Not Found</h1>;
   }
 
-  console.log(found);
-
   const planType = planTypes.map((plan) => (
     <Link
       className="planTypes"
