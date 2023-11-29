@@ -23,6 +23,24 @@
       "name": "Softball Field",
       "sport": "Softball",
       "address": "359 East LaGrange Rd into Physical Plant parking lot. Turn right at back of lot and follow past the end of the Stadium parking lot. Take that first left turn immediately after and follow to the end of the drive. The softball field will be on your right."
+    },
+    {
+      "id": 5,
+      "name": "Soccer Field",
+      "sport": "Soccer",
+      "address": "359 East LaGrange Rd. into Physical Plant parking lot. Follow the lot through the back entrance and turn right heading through Stadium parking lot. Turn left at the end of the stadium parking lot towards softball parking lot and continue straight until you hit the softball press box."
+    },
+    {
+      "id": 6,
+      "name": "Cross Country Course",
+      "sport": "Cross Country",
+      "address": "Cross Country Course: 359 East LaGrange Rd. The entrance to the course is across the street from Fast Pace Urgent Care."
+    },
+    {
+      "id": 7,
+      "name": "Southwestern High School Pool",
+      "sport": "Swimming",
+      "address": "Southwestern High School Pool: 167 S Main Cross St, Hanover. Take first turn into the school and go around the corner of the school to the pool entrance."
     }
   ],
   "planTypes": [
