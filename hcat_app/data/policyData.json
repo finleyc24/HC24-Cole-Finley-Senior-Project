@@ -1,0 +1,14 @@
+{
+  "policies": [
+    {
+      "id": 1,
+      "name": "Heat Safety",
+      "description": "The purpose of this is to provide uniform code of procedures to follow when the risk of heat illness is high.  This is done to protect the health and well-being of the student by aiding in the prevention of heat related illnesses."
+    },
+    {
+      "id": 2,
+      "name": "Concussion Protocol",
+      "description": "The following is the Concussion Protocol as set for by Hanover College Athletics and our team physician. The team physician is the only person who has the right to amend the protocol for any athlete. Each athlete who has been diagnosed with a concussion will follow this protocol."
+    }
+  ]
+}
