@@ -2,15 +2,27 @@
   "location": [
     {
       "id": 1,
-      "name": "Alumni Stadium",
+      "name": "Stadium",
       "sport": "Football, Track and Field, Lacrosse, and Soccer",
       "address": "359 East LaGrange Rd. through Physical Plant parking lot. Turn right out of parking lot and enter Stadium through North Gate entrance."
     },
     {
       "id": 2,
-      "name": "Horner",
+      "name": "Horner Center",
       "sport": "Basketball, Volleyball",
-      "address": "359 East LaGrange Rd. through Physical Plant parking lot. Turn right out of parking lot and enter Stadium through North Gate entrance."
+      "address": "100 Morse Lane. Turn left on Madison Ave, then left on File Street campus entrance, right on Clemmons Street, left into faculty/staff parking lot, meet emergency personnel member at back door by dumpsters to be directed to injured athlete."
+    },
+    {
+      "id": 3,
+      "name": "Baseball Field",
+      "sport": "Baseball",
+      "address": "359 East LaGrange Rd. into Physical Plant parking lot. Follow the lot through the back entrance and go straight towards 1stbase entrance."
+    },
+    {
+      "id": 4,
+      "name": "Softball Field",
+      "sport": "Softball",
+      "address": "359 East LaGrange Rd into Physical Plant parking lot. Turn right at back of lot and follow past the end of the Stadium parking lot. Take that first left turn immediately after and follow to the end of the drive. The softball field will be on your right."
     }
   ],
   "planTypes": [
