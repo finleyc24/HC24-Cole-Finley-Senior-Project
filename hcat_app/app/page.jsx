@@ -4,16 +4,18 @@ import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "/components/header";
 import ListGroup from "/components/ListGroup";
+import { location, planTypes } from "/data/locationData.json";
 
 const Home = () => {
-  let locations = [
-    <Link key="alumnistadium" className="location" href="locations/1">
-      Alumni Stadium
-    </Link>,
-    <Link key="horner" className="location" href="locations/2">
-      Horner Center
-    </Link>,
-  ];
+  const locations = location.map((loc) => (
+    <Link
+      className="location"
+      key={loc.id}
+      href={`/locations/${encodeURIComponent(loc.id)}`}
+    >
+      {loc.name}
+    </Link>
+  ));
 
   let policies = [
     <Link key="weather" className="policy" href="weather">
