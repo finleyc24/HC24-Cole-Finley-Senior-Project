@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Header from "/components/header";
 import ListGroup from "/components/ListGroup";
 import { location, planTypes } from "/data/locationData.json";
-
+import { policies } from "/data/policyData.json";
 const Home = () => {
   const locations = location.map((loc) => (
     <Link
@@ -17,17 +17,21 @@ const Home = () => {
     </Link>
   ));
 
-  let policies = [
-    <Link key="weather" className="policy" href="weather">
-      Weather Policies
-    </Link>,
-  ];
+  const policy = policies.map((pol) => (
+    <Link
+      className="policies"
+      key={pol.id}
+      href={`/policies/${encodeURIComponent(pol.id)}`}
+    >
+      {pol.name}
+    </Link>
+  ));
 
   return (
     <>
       <Header />
       <ListGroup className="locations" items={locations} heading="Locations" />
-      <ListGroup className="policies" items={policies} heading="Policies" />
+      <ListGroup className="policies" items={policy} heading="Policies" />
     </>
   );
 };
