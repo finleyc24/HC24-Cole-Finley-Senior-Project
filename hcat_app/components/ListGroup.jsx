@@ -7,7 +7,7 @@ function ListGroup({ items, heading }) {
 
   return (
     <div>
-      <h1>{heading}</h1>
+      <h1 style={{ color: "white" }}>{heading}</h1>
       <ul className="list-group">
         {items.map((item, index) => (
           <li

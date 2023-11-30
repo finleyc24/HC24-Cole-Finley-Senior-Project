@@ -1,15 +1,16 @@
+"use client";
 import { location, planTypes } from "/data/locationData.json";
 import Header from "/components/header";
 import Link from "next/link";
 import ListGroup from "/components/ListGroup";
+import ErrorPage from "next/error";
 
 export default function Locations({ params }) {
   const found = location.find((element) => element.id == params.locationId);
 
   if (!found) {
-    return <h1>404 - Page Not Found</h1>;
+    return <ErrorPage statusCode={404} />;
   }
-
   const planType = planTypes.map((plan) => (
     <Link
       className="planTypes"
@@ -25,9 +26,9 @@ export default function Locations({ params }) {
   return (
     <>
       <Header />
-      <h1>{found.name}</h1>
-      <p>{found.sport}</p>
-      <p>{found.address}</p>
+      <h1 className="location-name">{found.name}</h1>
+      <p className="location-sport">Sport: {found.sport}</p>
+      <p className="location-address">Address: {found.address}</p>
 
       <ListGroup
         className="planTypes"

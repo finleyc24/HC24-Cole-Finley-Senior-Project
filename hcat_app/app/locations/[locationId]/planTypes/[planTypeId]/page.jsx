@@ -1,5 +1,7 @@
+"use client";
 import { location, planTypes } from "/data/locationData.json";
 import Header from "/components/header";
+import ErrorPage from "next/error";
 
 export default function PlanType({ params }) {
   const foundPlan = planTypes.find(
@@ -7,18 +9,18 @@ export default function PlanType({ params }) {
   );
   const foundLoc = location.find((el) => el.id == params.locationId);
 
-  if (!foundPlan) {
-    return <h1>404 - Page Not Found</h1>;
+  if (!foundLoc) {
+    return <ErrorPage statusCode={404} />;
   }
 
   return (
     <>
       <Header />
-      <h1>{foundLoc.name}</h1>
-      <p>{foundLoc.sport}</p>
-      <p>{foundLoc.address}</p>
-      <h2>{foundPlan.name}</h2>
-      <p>{foundPlan.description}</p>
+      <h1 className="location-name">{foundLoc.name}</h1>
+      <p className="location-sport">Sport: {foundLoc.sport}</p>
+      <p className="location-address">Address: {foundLoc.address}</p>
+      <h2 className="plan-name">{foundPlan.name}</h2>
+      <p className="plan-description">{foundPlan.description}</p>
     </>
   );
 }

@@ -6,6 +6,7 @@ import Header from "/components/header";
 import ListGroup from "/components/ListGroup";
 import { location, planTypes } from "/data/locationData.json";
 import { policies } from "/data/policyData.json";
+
 const Home = () => {
   const locations = location.map((loc) => (
     <Link
