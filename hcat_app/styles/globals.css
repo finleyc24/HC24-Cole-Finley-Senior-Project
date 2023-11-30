@@ -1,53 +1,92 @@
+/* Global Styles */
 
-Header {
-    color: rgb(255, 255, 255);
-    font-size: 200%;
-    font-weight: 200;
-    background-color: rgb(147, 0, 0);
+/* Body Styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Style for the entire list group */
-  .list-group {
-    width: 400px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Style for the list group items */
-  .list-group-item {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect for list group items */
-  .list-group-item:hover {
-    background-color: #f8f9fa;
-  }
-
-.location {
-    font-size: larger;
-    text-decoration: none;
-    color: black;
+/* Main Container Styles with Background Image */
+.main {
+  height: 120vh;
+  background-image: url("/assets/Hanover.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-.policies {
-    font-size: larger;
-    text-decoration: none;
-    color: black;
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 20px;
+  color: white; 
+  background-color: rgb(147, 0, 0);
 }
 
-.planTypes {
-  font-size: larger;
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Link Styles */
+.location, .policies, .planTypes {
+  display: block;
+  padding: 8px 10px; 
+  margin: 3px 5px; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
+}
+
+.location:hover, .policies:hover, .planTypes:hover {
+  background-color: #01468b;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.list-group-heading {
+  color: #ffffff;
+}
+
+.location-name {
+  color: #ffffff;
+}
+
+.location-sport {
+  color: #ffffff;
+}
+
+.location-address {
+  color: #ffffff;
+}
+
+.plan-name {
+  color: #ffffff;
+}
+
+.plan-description {
+  color: #ffffff;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list-group {
+    width: 100%;
+  }
 }
