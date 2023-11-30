@@ -13,8 +13,8 @@ export default function Policies({ params }) {
   return (
     <>
       <Header />
-      <h1>{found.name}</h1>
-      <p>{found.description}</p>
+      <h1 className="policy-name">{found.name}</h1>
+      <p className="policy-description">{found.description}</p>
     </>
   );
 }

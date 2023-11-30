@@ -73,6 +73,14 @@ li {
   color: #ffffff;
 }
 
+.policy-name {
+  color: #ffffff;
+}
+
+.policy-description {
+  color: #ffffff;
+}
+
 /* Container Styles */
 .container {
   display: flex;
