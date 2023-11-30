@@ -33,6 +33,9 @@ const Home = () => {
       <Header />
       <ListGroup className="locations" items={locations} heading="Locations" />
       <ListGroup className="policies" items={policy} heading="Policies" />
+      <a class="btn btn-primary" href="/emsPlan/page.jsx" role="button">
+        EMS Action Plan
+      </a>
     </>
   );
 };
