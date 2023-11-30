@@ -15,6 +15,14 @@ export default function Policies({ params }) {
       <Header />
       <h1 className="policy-name">{found.name}</h1>
       <p className="policy-description">{found.description}</p>
+      <a
+        id="emsActionBtn"
+        className="btn btn-primary"
+        href="/emsPlan/page.jsx"
+        role="button"
+      >
+        EMS Action Plan
+      </a>
     </>
   );
 }

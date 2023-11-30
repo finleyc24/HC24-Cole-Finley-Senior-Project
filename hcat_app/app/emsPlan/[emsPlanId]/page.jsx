@@ -25,10 +25,9 @@ const page = () => {
         ***Next*** Send personnel to the gate to meet EMS to further direct them
         to the site.
       </p>{" "}
-      <p>
-        Has the AED arrived? No – Continue providing necessary care. Yes – Stop
-        giving care and attach electrodes as instructed.{" "}
-      </p>{" "}
+      <h2>Has the AED arrived?</h2>{" "}
+      <p>No – Continue providing necessary care.</p>
+      <p>Yes – Stop giving care and attach electrodes as instructed.</p>{" "}
       <h2>Has EMS arrived?</h2> <p>No – Continue providing necessary care.</p>{" "}
       <p>
         Yes - provide pertinent information (mechanism of injury, vital signs,

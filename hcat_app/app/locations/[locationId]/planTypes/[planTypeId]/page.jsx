@@ -21,6 +21,14 @@ export default function PlanType({ params }) {
       <p className="location-address">Address: {foundLoc.address}</p>
       <h2 className="plan-name">{foundPlan.name}</h2>
       <p className="plan-description">{foundPlan.description}</p>
+      <a
+        id="emsActionBtn"
+        className="btn btn-primary"
+        href="/emsPlan/page.jsx"
+        role="button"
+      >
+        EMS Action Plan
+      </a>
     </>
   );
 }

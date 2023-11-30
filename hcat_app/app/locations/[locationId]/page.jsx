@@ -35,6 +35,14 @@ export default function Locations({ params }) {
         items={planType}
         heading="Emergency Action Plans"
       />
+      <a
+        id="emsActionBtn"
+        className="btn btn-primary"
+        href="/emsPlan/page.jsx"
+        role="button"
+      >
+        EMS Action Plan
+      </a>
     </>
   );
 }

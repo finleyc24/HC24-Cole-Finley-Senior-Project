@@ -9,7 +9,7 @@ body {
 
 /* Main Container Styles with Background Image */
 .main {
-  height: 120vh;
+  height: 175vh;
   background-image: url("/assets/Hanover.jpeg");
   background-size: cover;
   background-position: center;
@@ -61,6 +61,15 @@ li {
   color: #ffffff;
 }
 
+.policy-name {
+  color:#ffffff;
+}
+
+#emsActionBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 /* Container Styles */
 .container {
   display: flex;
