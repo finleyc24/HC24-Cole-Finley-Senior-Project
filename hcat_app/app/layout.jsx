@@ -12,7 +12,6 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <head>
-        {/* Include any additional head elements such as meta tags, stylesheets, etc. */}
         <link rel="stylesheet" href="/styles/globals.css" />
       </head>
       <body>
