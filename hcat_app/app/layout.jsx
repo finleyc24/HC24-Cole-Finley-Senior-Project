@@ -15,10 +15,8 @@ const RootLayout = ({ children }) => {
         <link rel="stylesheet" href="/public/assets/globals.css" />
       </head>
       <body>
-        {/* Main container with background image */}
         <div className="main">
           <div className="gradient" />
-          {/* Content container */}
           <main className="app">{children}</main>
         </div>
       </body>
