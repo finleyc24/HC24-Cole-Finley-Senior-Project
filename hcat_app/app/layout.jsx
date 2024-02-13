@@ -1,5 +1,5 @@
 // Imports the necessary styles
-import "/styles/globals.css";
+import "/public/assets/globals.css";
 
 // Defines metadata for the page
 export const metadata = {
@@ -12,7 +12,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <head>
-        <link rel="stylesheet" href="/styles/globals.css" />
+        <link rel="stylesheet" href="/public/assets/globals.css" />
       </head>
       <body>
         {/* Main container with background image */}
