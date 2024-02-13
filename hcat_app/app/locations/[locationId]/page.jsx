@@ -1,5 +1,5 @@
 /**
- * React component rto create a page for displaying location details.
+ * React component to create a page for displaying location details.
  *
  * @param {Object} props - The properties passed to the component.
  * @param {Object} props.params - The parameters passed to the component.
