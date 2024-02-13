@@ -46,13 +46,21 @@
   "planTypes": [
     {
       "id": 1,
-      "name": "Head Injury",
-      "description": "This is the action plan for head injuries"
+      "name": "Diabetes",
+      "description": "Does this athlete have diabets? Yes -> Follow their plan.      No -> Monitor glucose levels -> 120 Give sugar -> 120 - 250 may return to play -> above 250 moderate exercise allowed -> above 350 follow EMS action plan)"
     },
     {
       "id": 2,
-      "name": "Neck Injury",
-      "description": "This is the action plan for neck injuries"
+      "name": "Asthma",
+      "description": [
+        "Signs and symptoms of an asthma attack: ",
+        "Shortness of breath, ",
+        "Chest tightness or pain, ",
+        "Wheezing sound when exhaling, ",
+        "Exercise induced asthma tends to be worse when the air is cold and dry ",
+        "Treatment:",
+        " If the athlete has previously been diagnosed with Asthma, they should have a rescue inhaler. A spare inhaler should be in the possession of the athletic trainer for emergency situations. Depending on the severity of the attack, the athlete may or may not be able to administer the inhaler by themselves. The athlete should take up to 2 puffs of the rescue inhaler. In most cases, the athlete should show immediate improvement. If this is the case, they may return to play. If there is no immediate relief of symptoms, the athlete should be held from playing and observed for up to 20 minutes if symptoms are not worsening."
+      ]
     }
   ]
 }
