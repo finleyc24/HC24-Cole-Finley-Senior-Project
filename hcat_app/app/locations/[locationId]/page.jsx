@@ -1,3 +1,13 @@
+/**
+ * React component representing a page for displaying location details.
+ *
+ * @param {Object} props - The properties passed to the component.
+ * @param {Object} props.params - The parameters passed to the component.
+ * @param {string} props.params.locationId - The ID of the location from locationData.json.
+ *
+ * @returns {JSX.Element} - The React component to create location page.
+ */
+
 "use client";
 import { location, planTypes } from "/data/locationData.json";
 import Header from "/components/header";
@@ -6,11 +16,15 @@ import ListGroup from "/components/ListGroup";
 import ErrorPage from "next/error";
 
 export default function Locations({ params }) {
+  // Find the location using the location ID from locationData.json
   const found = location.find((element) => element.id == params.locationId);
 
+  // if no location is found return the NextJS error page
   if (!found) {
     return <ErrorPage statusCode={404} />;
   }
+
+  // Create an array from links to different plantype pages.
   const planType = planTypes.map((plan) => (
     <Link
       className="planTypes"
@@ -23,6 +37,7 @@ export default function Locations({ params }) {
     </Link>
   ));
 
+  // Create the location page with the header, location details, and the plan types list.
   return (
     <>
       <Header />
