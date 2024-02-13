@@ -7,7 +7,7 @@ export default function Policies({ params }) {
   const found = policies.find((element) => element.id == params.policyId);
 
   if (!found) {
-    return <h1>404 - Page Not Found</h1>;
+    return <ErrorPage statusCode={404} />;
   }
 
   return (
