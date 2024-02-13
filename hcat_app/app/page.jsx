@@ -1,4 +1,10 @@
-// Creates the home page
+/**
+ * React component that makes the home page of the web app.
+ * Creates two list groups that creates a locations and policy selection area.
+ *
+ * @returns {JSX.Element} - The React component for the home page
+ */
+
 import React from "react";
 import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.css";
@@ -8,6 +14,7 @@ import { location, planTypes } from "/data/locationData.json";
 import { policies } from "/data/policyData.json";
 
 const Home = () => {
+  // Creates an array of links to location pages using locationData.json
   const locations = location.map((loc) => (
     <Link
       className="location"
@@ -18,6 +25,7 @@ const Home = () => {
     </Link>
   ));
 
+  // Creates an array of links to policy pages using policyData.json
   const policy = policies.map((pol) => (
     <Link
       className="policies"
@@ -27,6 +35,9 @@ const Home = () => {
       {pol.name}
     </Link>
   ));
+
+  // Create the home page with the header component,
+  //location and policy lists, and the EMS action plan button
 
   return (
     <>
