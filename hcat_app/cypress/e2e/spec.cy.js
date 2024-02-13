@@ -38,27 +38,27 @@ describe('Assert URL is correct', () => {
   })
 })
 
-describe('Find Head Injury Link', () => {
-  it('Finds the content "Head Injury"', () => {
+describe('Find Diabetes Link', () => {
+  it('Finds the content "Diabetes"', () => {
     cy.visit('http://localhost:3000/locations/1')
 
-    cy.contains('Head Injury')
+    cy.contains('Diabetes')
   })
 })
 
-describe('Click Head Injury Link', () => {
-  it('Clicks the content "Head Injury"', () => {
+describe('Click Diabetes Link', () => {
+  it('Clicks the content "Diabetes"', () => {
     cy.visit('http://localhost:3000/locations/1')
 
-    cy.contains('Head Injury').click
+    cy.contains('Diabetes').click
   })
 })
 
 describe('Assert URL is correct', () => {
-  it('clicking "HeadInjury" navigates to a new url', () => {
+  it('clicking "Diabetes" navigates to a new url', () => {
     cy.visit('http://localhost:3000/locations/1')
 
-    cy.contains('Head Injury').click()
+    cy.contains('Diabetes').click()
 
     // Should be on a new URL which
     // includes '/commands/actions'
